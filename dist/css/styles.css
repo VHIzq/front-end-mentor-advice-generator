@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+/* colors */
+/* Typography */
+@media (min-width: 375px) {
+  .responsive-test {
+    color: rebeccapurple;
+  }
+}
+@media (min-width: 1440px) {
+  .responsive-test {
+    color: cornflowerblue;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
