@@ -22,13 +22,3 @@ $breakpoints: (
   }
 }
 
-
-.responsive-test{
-  @include sm {
-    color: rebeccapurple;
-  }
-  @include lg { 
-    color: cornflowerblue;
-  }
-
-}
