@@ -2,5 +2,59 @@
 @import "variables";
 @import "breakpoints";
 
+body{
+  background-color: $dark-grayish-blue;
+  font-family: 'Manrope', sans-serif;
+}
 
+.app{
+  display: flex;
+  height: 100vh;
+  
+  .app__container{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 350px;
+    width: 350px;
+    min-height: 350px;
+    border-radius: 10px;
+    background-color: $grayish-blue;
+  }
 
+  h5{
+    letter-spacing: 3px;
+    text-align: center;
+    color: $neon-green;
+  }
+  p{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+    color: $light-cyan;
+  }
+
+  .dice__container{
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -25px;
+    background-color: $neon-green;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+
+    button{
+      background-color: $neon-green;
+      border: none;
+      cursor: pointer;
+    }
+    img{
+      transform: translateX(30%);
+      transform: translateY(30%);
+    }
+  }
+
+}

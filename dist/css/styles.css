@@ -1,5 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
 /* colors */
 /* Typography */
+body {
+  background-color: #323a49;
+  font-family: "Manrope", sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+.app .app__container {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 350px;
+  width: 350px;
+  min-height: 350px;
+  border-radius: 10px;
+  background-color: #4e5d73;
+}
+.app h5 {
+  letter-spacing: 3px;
+  text-align: center;
+  color: #52ffa8;
+}
+.app p {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 800;
+  color: #cee3e9;
+}
+.app .dice__container {
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: -25px;
+  background-color: #52ffa8;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.app .dice__container button {
+  background-color: #52ffa8;
+  border: none;
+  cursor: pointer;
+}
+.app .dice__container img {
+  transform: translateX(30%);
+  transform: translateY(30%);
+}
 
 /*# sourceMappingURL=styles.css.map */
