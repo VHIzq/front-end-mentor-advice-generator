@@ -67,19 +67,19 @@ body{
     padding: 10px;
     border-radius: 50%;
 
-    @include lg{
-      &:hover{
-        box-shadow: 3px 3px ;
+    button{
+      background-color: $neon-green;
+      cursor: pointer;
+      border: none;
+      
+      &:active{
+        box-shadow: -1px 1px 45px 12px rgba(82,255,168,0.74);
+        -webkit-box-shadow: -1px 1px 45px 12px rgba(82,255,168,0.74);
+        -moz-box-shadow: -1px 1px 45px 12px rgba(82,255,168,0.74); 
       }
     }
 
-    button{
-      background-color: $neon-green;
-      border: none;
-      cursor: pointer;
-    }
     img.dice__img{
-
       transform: translateX(30%);
       transform: translateY(30%);
     }

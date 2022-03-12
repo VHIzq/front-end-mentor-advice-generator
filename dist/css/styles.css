@@ -65,15 +65,15 @@ body {
   padding: 10px;
   border-radius: 50%;
 }
-@media only screen and (min-width: 1440px) {
-  .app .dice__container:hover {
-    box-shadow: 3px 3px;
-  }
-}
 .app .dice__container button {
   background-color: #52ffa8;
-  border: none;
   cursor: pointer;
+  border: none;
+}
+.app .dice__container button:active {
+  box-shadow: -1px 1px 45px 12px rgba(82, 255, 168, 0.74);
+  -webkit-box-shadow: -1px 1px 45px 12px rgba(82, 255, 168, 0.74);
+  -moz-box-shadow: -1px 1px 45px 12px rgba(82, 255, 168, 0.74);
 }
 .app .dice__container img.dice__img {
   transform: translateX(30%);
