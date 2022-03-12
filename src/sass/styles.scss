@@ -5,6 +5,7 @@
 body{
   background-color: $dark-grayish-blue;
   font-family: 'Manrope', sans-serif;
+  font-weight: 800;
 }
 
 .app{
@@ -19,9 +20,18 @@ body{
     align-self: center;
     max-width: 350px;
     width: 350px;
-    min-height: 350px;
+    min-height: 400px;
+    width: 400px;
+    padding: 5px;
     border-radius: 10px;
     background-color: $grayish-blue;
+
+    @include lg{
+      width: 420px;
+      max-width: 420px;
+      padding: 20px;
+      min-height: 330px;
+    }
   }
 
   h5{
@@ -34,6 +44,17 @@ body{
     font-size: 27px;
     font-weight: 800;
     color: $light-cyan;
+
+    @include lg{
+    padding-bottom: 30px;
+    }
+  }
+  img.separator{
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    left: -2px;
+
   }
 
   .dice__container{
@@ -46,12 +67,19 @@ body{
     padding: 10px;
     border-radius: 50%;
 
+    @include lg{
+      &:hover{
+        box-shadow: 3px 3px ;
+      }
+    }
+
     button{
       background-color: $neon-green;
       border: none;
       cursor: pointer;
     }
-    img{
+    img.dice__img{
+
       transform: translateX(30%);
       transform: translateY(30%);
     }

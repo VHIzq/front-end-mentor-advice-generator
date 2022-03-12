@@ -1,5 +1,3 @@
-const axios = require("axios");
-
 let id = (id) => document.getElementById(id);
 
 const $cta = id("cta");
@@ -8,18 +6,15 @@ const $adviceDescription = id("advice__description");
 
 
 function gettingAdvice(){
-  const url = "	https://api.adviceslip.com/advice";
-  
-  axios.get(url)
-        .then((resp) => {
-          console.log(resp);
-        })
-        .catch((err) => {
-          console.log(err);
-        })
-}
 
+  fetch("https://api.adviceslip.com/advice")
+  .then(res => res.json())
+  .then(data => {
+    $adviceNumber.textContent = `ADVICE # ${data.slip.id}`;
+    $adviceDescription.textContent = `"${data.slip.advice}"`;
+  });
+}
 
 $cta.addEventListener("click", () => {
   gettingAdvice();
-});
+})
